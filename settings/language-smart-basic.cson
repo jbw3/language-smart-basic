@@ -1,0 +1,4 @@
+'.source.smart-basic':
+  'editor':
+    'commentStart': '// '
+    'tabLength': 4
