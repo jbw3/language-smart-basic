@@ -4,3 +4,31 @@
 'fileTypes': [
     'sb'
 ]
+
+'patterns': [{
+        #preprocessor
+        'match': '#(?:include|define)\\b'
+        'name': 'keyword.control.smart-basic'
+    },
+    {
+        # strings
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.smart-basic'
+
+        'patterns': [{
+                'match': '\\\\(?:\\\\|n|r)'
+                'name': 'constant.character.escape.smart-basic'
+            }]
+    },
+    {
+        # comments
+        'match': '//.*'
+        'name': 'comment.line.smart-basic'
+    },
+    {
+        # numeric constants
+        
+
+    }
+]
