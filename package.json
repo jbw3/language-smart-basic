@@ -1,18 +1,15 @@
 {
   "name": "language-smart-basic",
-  "main": "./lib/language-smart-basic",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "smartBasic syntax highlighting",
   "keywords": [
+      "BASIC",
+      "smartBASIC"
   ],
-  "activationCommands": {
-    "atom-workspace": "language-smart-basic:toggle"
-  },
-  "repository": "https://github.com/atom/language-smart-basic",
+  "repository": "https://github.com/jbw3/language-smart-basic",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
