@@ -8,7 +8,7 @@
 'patterns': [{
         #preprocessor
         'match': '#(?:include|define)\\b'
-        'name': 'keyword.control.smart-basic'
+        'name': 'keyword.other.smart-basic'
     },
     {
         # strings
@@ -17,7 +17,7 @@
         'name': 'string.quoted.double.smart-basic'
 
         'patterns': [{
-                'match': '\\\\(?:\\\\|n|r)'
+                'match': '\\\\(?:\\\\|n|r|t)'
                 'name': 'constant.character.escape.smart-basic'
             }]
     },
@@ -28,7 +28,12 @@
     },
     {
         # numeric constants
-        
-
+        'name': 'constant.numeric.smart-basic'
+        'match': '(0[xX][\\dA-Fa-f]+|\\d+(\\.(\\d+)?)?|\\.\\d+)'
+    },
+    {
+        # keywords
+        'name': 'keyword.control.smart-basic'
+        'match': '(?i)\\b(?:as|bp|break|byref|byval|call|case|continue|dim|disable|do|dowhile|downto|else|elseif|endfunc|endif|endselect|endsub|endwhile|exitfunc|exitsub|for|function|if|next|onerror|onevent|onfatalerror|print|redo|select|sprint|step|stop|sub|then|throwevent|to|until|waitevent|while)\\b'
     }
 ]
