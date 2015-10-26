@@ -40,6 +40,9 @@
         # keywords (other)
         'name': 'keyword.other.smart-basic'
         'match': '(?xi)\\b(?:STRLEN
+                |INTEGER\\.H
+                |INTEGER\\.O
+                |INTEGER\\.B
                 |GETLASTERROR
                 |LEFT$
                 |RIGHT$
@@ -145,6 +148,7 @@
                 |BLEWHITELISTADDADDR
                 |BLEWHITELISTADDIRK
                 |I2COPEN
+                |I2CCLOSE
                 |I2COPENEX
                 |I2CWRITEREAD
                 |I2CWRITEREG8
