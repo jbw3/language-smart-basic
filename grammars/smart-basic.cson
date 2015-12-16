@@ -38,24 +38,34 @@
         'match': '(?i)\\b(?:as|bp|break|byref|byval|call|case|continue|dim|disable|do|dowhile|downto|else|elseif|endfunc|endif|endselect|endsub|endwhile|exitfunc|exitsub|for|function|if|next|onerror|onevent|onfatalerror|print|redo|select|sprint|step|stop|sub|then|throwevent|to|until|waitevent|while)\\b'
     },
     {
+        # keywords ending with $
+        'name': 'support.function.smart-basic'
+        'match': '(?xi)\\b(?:LEFT
+                |MID
+                |STRESCAPE
+                |STRESCAPEEX
+                |STRHEXIZE
+                |STRDEHEXIZE
+                |STRSPLITLEFT
+                |SYSINFO
+                |BLEGETDEVICENAME
+                |VERBOSEERR
+                |RIGHT)\\$\\B'
+    },
+    {
         # keywords (other)
-        'name': 'keyword.other.smart-basic'
+        'name': 'support.function.smart-basic'
         'match': '(?xi)\\b(?:STRLEN
                 |INTEGER\\.H
                 |INTEGER\\.O
                 |INTEGER\\.B
                 |GETLASTERROR
-                |LEFT$
-                |RIGHT$
-                |MID$
                 |STRPOS
                 |MIN
                 |MAX
                 |ABS
                 |STRCMP
                 |STRVALDEC
-                |STRESCAPE$
-                |STRESCAPEEX$
                 |STRGETCHR
                 |STRSETCHR
                 |STRSETBLOCK
@@ -71,15 +81,11 @@
                 |STRHEX2BIN
                 |STRSUM
                 |STRXOR
-                |STRHEXIZE$
-                |STRDEHEXIZE$
-                |STRSPLITLEFT$
                 |CIRCBUFCREATE
                 |CIRCBUFWRITE
                 |CIRCBUFOVERWRITE
                 |CIRCBUFREAD
                 |CIRCBUFITEMS
-                |SYSINFO$
                 |EXTRACTSTRTOKEN
                 |EXTRACTINTTOKEN
                 |TIMERRUNNING
@@ -97,7 +103,6 @@
                 |FILELEN
                 |FREAD
                 |FREADUNTIL
-                |BLEGETDEVICENAME$
                 |BLEGAPSVCINIT
                 |BLEADVRPTINIT
                 |BLESCANRPTINIT
@@ -209,7 +214,6 @@
                 |BLESVCSETBLOODPRESS
                 |BLESVCADDHEARTRATERR
                 |SENDMSGAPP
-                |VERBOSEERR$
                 |RAND
                 |RANDEX
                 |GETTICKCOUNT
